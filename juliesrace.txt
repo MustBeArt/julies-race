@@ -1,0 +1,55 @@
+DA        1 print"{clr}"chr$(142)chr$(8)
+SM        5 :
+BK       10 a$(0)=" {red}S":n$(0)="red heart":f(0,0)=34:f(1,0)=75
+JB       20 a$(1)=" {grn}Q":n$(1)="green ball":f(0,1)=43:f(1,1)=52
+XD       30 a$(2)=" {yel}*":n$(2)="yellow star":f(0,2)=51:f(1,2)=97
+CC       40 a$(3)=" {pur}Z":n$(3)="pink diamond":f(0,3)=57:f(1,3)=172
+AC      100 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}";
+MC      110 fori=0to3:printa$(i)"{down}":x(i)=0:next
+XJ      115 print"{home}{down}{down}{down}{down}{down}{down}{down}{blk}";
+QM      116 print"CC{CBM-S}                                    {SHIFT--}";
+AH      117 fori=1to9:print"{rght}{rght}{SHIFT--}                                    {SHIFT--}";:next
+PR      118 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{rght}{rght}{CBM-Q}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{CBM-W}";
+FH      119 fori=1to4:print"{down}{rght}{rght}{CBM-Q}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{CBM-W}";:next
+EA      120 print"CC{CBM-X}                                    {SHIFT--}";
+QK      130 gosub1000
+AF      200 k=int(4*rnd(0))
+FJ      210 remfort=1to10 :next t
+AX      220 ifk>3then200
+PR      230 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}";
+EC      240 ifk=0then260
+MC      250 fori=1tok:print"{down}{down}";:next
+SH      260 x(k)=x(k)+1:gosub2000
+HJ      270 printspc(x(k))a$(k)
+BG      275 ifx(k)<38then200
+QQ      280 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}       "n$(k)" wins!":gosub2500:t=0
+PJ      290 geta$:ifa$<>""thenrun
+XG      295 t=t+1:ift=1000thenrun
+GJ      300 goto290
+FJ      900 goto200
+MD     1000 x$=chr$(65+26*rnd(0))
+PC     1001 print"{home}{grn}         U{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}I"
+MD     1002 print  "         {SHIFT--}{red}julie's boat race{grn}{SHIFT--}"
+QH     1003 print"{grn}         J{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}{SHIFT-*}K"
+RB     1015 print"{down}{lblu}       press     {wht}"x$
+KS     1020 get i$:if i$ <> x$ then 1020
+CA     1025 print"{up}              "
+HE     1030 v=54296:w=54276:a=54277:h=54273:l=54272
+BM     1040 forx=15to0step-1:pokev,x:pokew,129:pokea,15:pokeh,40:pokel,200:next
+PH     1050 pokew,0:pokea,0
+PP     1200 return
+JP     2000 pokev,8:pokew,17:pokea,64:poke54278,64
+JJ     2010 pokeh,f(0,k):pokel,f(1,k):return
+MM     2500 fort=1to300:next:fort=0to8:pokev,8-t:next
+EE     2550 pokev,0
+GG     2560 s=54278:ph=54275:pl=54274
+JQ     2565 forl=54272to54296:pokel,0:next
+EQ     2570 pokev,15:pokea,88:pokeph,15:pokepl,15:pokes,89
+RX     2580 readhh:ifhh=-1thenreturn
+HM     2590 readll:readd
+DC     2600 pokeh,hh:pokel,ll:pokew,65
+RE     2610 fort=1tod/4:next:pokew,64
+ER     2620 fort=1to50:next:goto2570
+RK     2630 data34,75,250,43,52,250,51,97,375,43,52,125,51,97
+AF     2640 data250,57,172,250,51,97,500,0,0,125,43,52,250,51,97,250,57,172,1000
+AP     2650 data51,97,500,-1,-1,-1

@@ -4,3 +4,6 @@ Julie's Race, a C64 BASIC game recovered from 1983(?) floppy disk. I wrote this 
 The .prg file is the actual program file, copied straight from the Commodore 1541 disk.
 
 The .txt file is a listing you can type in, generated with _petcat_ from the program file, and annotated manually with line checksums. Use the New Automatic Proofreader from the March 1986 issue of Compute! magazine to check your typing.
+
+![Screenshot of Julie's Race]
+(https://github.com/MustBeArt/julies-race/blob/master/screenshot.png)
